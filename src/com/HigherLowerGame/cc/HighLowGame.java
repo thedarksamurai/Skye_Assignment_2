@@ -24,8 +24,9 @@ public class HighLowGame {
 			} else if (userInput < computerInput) {
 				System.out.println("Higher");
 				userTries++;
-			} else {
+			} else if (userInput == computerInput){
 				done = true;
+        break;
 			}
 		}
 		if (done) {
